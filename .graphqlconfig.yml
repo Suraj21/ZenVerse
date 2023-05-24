@@ -1,0 +1,12 @@
+projects:
+  ssjzenverse:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - blogpost
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: blogpostAPI
+        docsFilePath: .
